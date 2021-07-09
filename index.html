@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,53 @@
     <title>TODO</title>
     <link rel="stylesheet" href="./css/main.css">
 </head>
+
 <body>
-   <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    <form class="form">
+        <div class="form-row">
+            <textarea placeholder="Message.."></textarea>
+        </div>
+        <div class="form-row">
+            <input type="color">
+        </div>
+        <div class="form-row">
+            <input type="date">
+        </div>
+        <div class="form-row">
+            <input type="checkbox"> <span>Task is completed?</span>
+        </div>
+        <div class="form-row">
+            <button class="save" type="submit">Save</button>
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+
+    <div class="list">
+        <div class="card" style="border-color: #eee;">
+            <!-- <span class="badge not-completed">Not completed</span> -->
+            <span class="badge completed">Completed</span>
+            <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, eaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ut eius debitis maiores fuga commodi ducimus aliquid soluta recusandae. Ex?</p>
+            <p class="deadline">2017-12-31</p>
+        </div>
+        <div class="card" style="border-color: #eee;">
+            <span class="badge not-completed">Not completed</span>
+            <!-- <span class="badge completed">Completed</span> -->
+            <p class="message">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, saepe.</p>
+            <p class="deadline">2017-12-31</p>
+        </div>
+        <div class="card" style="border-color: #eee;">
+            <span class="badge not-completed">Not completed</span>
+            <!-- <span class="badge completed">Completed</span> -->
+            <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ut eius debitis maiores fuga commodi ducimus aliquid soluta recusandae. Ex?</p>
+            <p class="deadline">2017-12-31</p>
+        </div>
+        <div class="card" style="border-color: #eee;">
+            <!-- <span class="badge not-completed">Not completed</span> -->
+            <span class="badge completed">Completed</span>
+            <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ut eius debitis maiores fuga commodi ducimus aliquid soluta recusandae. Ex?</p>
+            <p class="deadline">2017-12-31</p>
+        </div>
+    </div>
 </body>
+
 </html>

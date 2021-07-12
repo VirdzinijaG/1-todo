@@ -16,7 +16,7 @@ class Form {
             return false;
         }
         this.render();
-        this.findTargetELement();
+        // this.findTargetELement();
         this.addEvents();
         // susirandame DOM elementa, kuriame reikia ipiesti forma
         console.log("tesiam darba...");
@@ -62,10 +62,10 @@ class Form {
         // this.DOM.innerHTML += HTML;
         this.DOM.insertAdjacentHTML("afterbegin", HTML);
 
-        this.messageDOM = this.saveButtonDOM = this.DOM.querySelector("textarea");
-        this.colorDOM = this.saveButtonDOM = this.DOM.querySelector('input[type="color"]');
-        this.dateDOM = this.saveButtonDOM = this.DOM.querySelector('input[type="date"]');
-        this.completedDOM = this.saveButtonDOM = this.DOM.querySelector('input[type="checkbox"]');
+        this.messageDOM = this.DOM.querySelector("textarea");
+        this.colorDOM = this.DOM.querySelector('input[type="color"]');
+        this.dateDOM = this.DOM.querySelector('input[type="date"]');
+        this.completedDOM = this.DOM.querySelector('input[type="checkbox"]');
         this.saveButtonDOM = this.saveButtonDOM = this.DOM.querySelector("button.save");
 
 
@@ -92,13 +92,13 @@ class Form {
                console.log("task is NOT valid...");
            }
 
-            console.log(message);
-            console.log(color);
-            console.log(date);
-            console.log(completed);
+            // console.log(message);
+            // console.log(color);
+            // console.log(date);
+            // console.log(completed);
         });
     }
-    isValidTask() {
+    isValidTask(message, color, date, completed) {
         if (!this.isValidMessage(message) ||
             !this.isValidColor(color) ||
             !this.isValidDate(date) ||

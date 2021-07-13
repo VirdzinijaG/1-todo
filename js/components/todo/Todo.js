@@ -38,9 +38,10 @@ class Todo {
         const HTML = '<div class="list"></div>';
         this.DOM.insertAdjacentHTML("beforeend", HTML);
 
-        this.listDOM = this.DOM.querySelector('.list')
+        this.listDOM = this.DOM.querySelector('.list');
     }
     createCard(message, color, date, completed = false) {
+        // console.log(this);
 
         let status = '<span class="badge not-completed">Not completed</span>';
         
